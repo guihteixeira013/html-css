@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML medias</title>
+</head>
+<body>
+    <h2>Dinamic Image</h2>
+    <p>Try to access this website on multiple different devices or just increase and decrease it your browser size.</p>
+    <picture> <!-- Allows you to use multiple sources-->
+        <source media="(max-width: 750px)" srcset="images/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="images/foto-m.png" type="image/png">
+        <!-- DEFAULT its foto-g, but if the device is smaller it will change image-->
+        <img src="images/foto-g.png" alt="flexible image">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <!-- <audio src="media/go-neffex.mp3" controls autoplay></audio> -->
+    <audio preload="metadata" autoplay controls loop> <!-- Pay attention with order -->
+        <source src="media/guanacast-33.mp3" type="audio/mpeg">
+        <source src="media/guanacast-33.ogg" type="audio/ogg">
+        <source src="media/guanacast-33.wav" type="audio/wav"> <!-- Try to avitate WAV archives, its too large-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="media/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>

@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fontes em CSS</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
+
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
             /*  
+                Weight(peso) |Width(largura) |Height(altura)
+
                 MEDIDAS ABSOLUTAS
                     cm, mm, in(polegada), [px], pt, pc
                     
@@ -17,7 +21,25 @@
                     18px = 1em
                     [recomendação W3C - preferencia EM]
             */
-            font-size: 1em;
+        }
+
+        h1 {
+
+            /*
+            ORDEM SHORTHANDS: 
+                    style, variant, weight, size, family.
+            ANTES:
+            font-family: 'Work Sans', sans-serif;
+            font-size: 3em;
+            font-weight: bolder;
+            font-style: italic;
+            DEPOIS:
+            ShortHand*/
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+
+        h2 {
+            font: bold 2em 'Work Sans', sans-serif;
         }
     </style>
 </head>

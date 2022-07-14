@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+
+body {
+    background-color: #ACD2ED;
+}
+
+header {
+    background-color: #14591D;
+    color: white;
+    text-align: center;
+}
+ 
+header > nav {
+    text-align: left;
+}
+main {
+    background-color: #E1E289;
+}
+
+main > article > itframe {
+    margin: auto;
+}
+
+main > article > aside {
+    background-color: white;
+    margin: 100px;
+}
+
+main > article > aside > h1 {
+    background-color: #99AA38;
+    color: white;
+}
+
+footer {
+    background-color: #0A210F;
+    color: white;
+}

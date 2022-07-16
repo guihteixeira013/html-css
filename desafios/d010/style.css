@@ -3,19 +3,41 @@
 
 body {
     background-color: #ACD2ED;
+    margin: auto;
 }
 
 header {
     background-color: #14591D;
     color: white;
     text-align: center;
+    padding: 10px;
 }
  
 header > nav {
     text-align: left;
 }
+
+header > nav > a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.ref {
+    background-color: #FF6700;
+    color: white;
+    text-decoration: none;
+    padding: 2px;
+}
+
+.ref:hover{
+    color: #0A210F;
+    text-decoration: underline;
+}
+
 main {
     background-color: #E1E289;
+    padding: 10px;
 }
 
 main > article > itframe {
@@ -23,13 +45,15 @@ main > article > itframe {
 }
 
 main > article > aside {
-    background-color: white;
-    margin: 100px;
+    background-color: #FF6700;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 main > article > aside > h1 {
     background-color: #99AA38;
     color: white;
+    padding: 10px;
 }
 
 footer {

@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
 
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body {
     background-color: #ACD2ED;
     margin: auto;
@@ -12,8 +14,17 @@ header {
     text-align: center;
     padding: 10px;
 }
+
+header > h1 {
+    font: 2.5em 'Oswald', sans-serif;
+}
+
+header > p {
+    font: 1em 'Comfortaa', sans-serif ;
+}
  
 header > nav {
+    font-family: 'Comfortaa', sans-serif;
     text-align: left;
 }
 
@@ -37,9 +48,21 @@ header > nav > a {
 
 main {
     background-color: #E1E289;
-    padding: 10px;
+    padding: 10px
 }
 
+main > article > h1 {
+    font: bold 1.5em 'Raleway', sans-serif;
+}
+
+main > article > h2 {
+    font: 600 1.5em 'Raleway', sans-serif;
+}
+
+main > article > p {
+    font: 1em 'Comfortaa', sans-serif;
+    text-align: justify;
+}
 main > article > itframe {
     margin: auto;
 }
@@ -53,7 +76,16 @@ main > article > aside {
 main > article > aside > h1 {
     background-color: #99AA38;
     color: white;
+    font: 1.5em 'Raleway', sans-serif;
     padding: 10px;
+}
+
+main > article > aside > p {
+    font: 1em 'Comfortaa', sans-serif;
+}
+
+main > article > aside > dl {
+    font: 1em 'Comfortaa', sans-serif;
 }
 
 footer {

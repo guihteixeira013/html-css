@@ -3,15 +3,29 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+    --cor0 : #ACD2ED;
+    --cor1 : #809db1a9;
+    --cor2 : #E1E289;
+    --cor3 : #99AA38;
+    --cor4 : #14591D;
+    --cor5 : #0A330F;
+    --cor6 : #0A210F;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
 body {
-    background-color: #ACD2ED;
+    background-color: var(--cor0);
     margin: auto;
     margin-bottom: -18px;
 }
 
 header {
-    background-color: #14591D;
-    background-image: linear-gradient(#809db1a9, #0A330F);
+    background-image: linear-gradient(var(--cor4), var(--cor5));
     color: white;
     padding: 10px;
     text-align: center;
@@ -26,30 +40,21 @@ header > h1 {
 header > p {
     font: 1em 'Comfortaa', sans-serif ;
 }
- 
-header > nav {
-    font-family: 'Comfortaa', sans-serif;
-    font-weight: bolder;
-    margin-top: 44px;
-    text-align: left;
+
+nav {
+    background-color: var(--cor5);
+    color: white;
+    padding: 5px;
 }
 
-header > nav > a:hover{
-    background-color: #e0e28977;
-    border-radius: 5px;
-    color: black;
-    width: auto;
-    height: auto;
-}
-
-header > nav > a {
+nav a {
     text-decoration: none;
     color: white;
-    padding: 10px;
+    padding: 5px;
 }
 
 .ref {
-    background-color: #E1E289;
+    background-color: var(--cor2);
     color: black;
     font-weight: bolder;
     text-decoration: none;
@@ -59,7 +64,7 @@ header > nav > a {
 main {
     background-color: white;
     border-radius: 0px 0px 5px 5px;
-    box-shadow: 1px 1px 6px 5px #809db1a9;
+    box-shadow: 1px 1px 6px 5px var(--cor1);
     margin: auto;
     padding: 20px;
     height: auto;
@@ -72,7 +77,7 @@ main > article > h1 {
 }
 
 main > article > h2 {
-    background-image: linear-gradient(to right, #E1E289, white);
+    background-image: linear-gradient(to right, var(--cor2), white);
     font: 600 1.5em 'Raleway', sans-serif;
     padding-left: 5px;
 }
@@ -89,12 +94,12 @@ main > article > p {
 }
 
 main > article > p > a:hover{
-    color: #0A330F;
+    color: var(--cor5);
     font-weight: bolder;
     text-decoration: underline;
     }
     
-main > article > div {
+main div {
     background-color: #0A210F;
     margin: auto;
     padding: auto;
@@ -103,9 +108,10 @@ main > article > div {
 }
 
 main > article > aside {
-    background-color: #E1E289;
+    background-color: var(--cor2);
     box-shadow: 0px 2px 8px 2px #9d9d5e70;
     border-radius: 10px;
+    margin-bottom: 20px;
     margin-top: 45px;
     padding: 20px;
 }
@@ -121,7 +127,7 @@ main > article > aside > dl > dt::before {
 }
 
 main > article > aside > h1 {
-    background-color: #99AA38;
+    background-color: var(--cor3);
     color: white;
     font: 600 1.5em 'Raleway', sans-serif;
     padding: 10px;
@@ -140,7 +146,7 @@ main > article > aside > dl {
 }
 
 footer {
-    background-color: #0A210F;
+    background-color: var(--cor6);
     color: white;
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
@@ -154,6 +160,6 @@ footer > p > a {
 }
 
 footer > p > a:hover {
-    color: #99AA38;
+    color: var(--cor3);
     text-decoration: underline;
 }

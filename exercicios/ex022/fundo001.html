@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagem de Fundo</title>
+    <style>
+        :root {
+            --cor1 : #D6D2D2;
+            --cor2 : #F1E4F3;
+            --cor3 : #F4BBD3;
+            --cor4 : #F686BD;
+        }
+
+        body {
+            background-image: url(images/wallpaper006.jpg);
+        }
+
+        div.square {
+            background-color: var(--cor4);
+            border: 2px solid black;
+            border-radius: 10px;
+            display: inline-block;
+            height: 300px;
+            width: 300px;
+        }
+
+        /*3 WAYS TO SET A BACKGROUND*/
+        div#s1 {
+            background-color: var(--cor1);
+        }
+
+        div#s2 {
+            background-image: linear-gradient(to top, var(--cor1), var(--cor4));
+        }
+
+        div#s3 {
+            background-image: url('images/pattern003.png');
+        }
+    </style>
+</head>
+<body>
+    <div class="square" id="s1">
+
+    </div>
+    <div class="square" id="s2">
+
+    </div>
+    <div class="square" id="s3">
+
+    </div>
+
+    
+</body>
+</html>

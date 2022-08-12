@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body {
             height: 98.5vh;
-            background-color: black;
-            background-image: url('images/wallpaper002.jpg');
-            background-position: center center;
-            background-repeat: no-repeat;
+            /*Shorthand - BACKGROUND
+            color > image > position > repeat > [size]error! > attachment
+            */
+
+            background: black url('images/wallpaper002.jpg') center center no-repeat fixed;
             background-size: cover;
         }
 
@@ -21,15 +22,41 @@
             border-radius: 10px;
             box-shadow: 0px 0px 5px 0px #0000006b;
             margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            max-width: 600px;
             padding: 10px;
-            width: 400px;
+
+        }
+
+        div.cit {
+            background-color: blue;
+            background-image: url(images/pattern004.png);
+            height: 200px;
+            margin: -10px;
+        }
+
+        div > p {
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            margin: 10px;
+            padding: 15px;
         }
     </style>
 </head>
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore porro sequi aut nihil distinctio perspiciatis et! Distinctio soluta unde in eveniet amet porro quos nulla magnam consequuntur, vero vel culpa?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum suscipit voluptas corrupti dolore magnam nisi vero consequuntur iure accusantium veniam. Vitae unde eaque alias quam non aliquid natus debitis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore porro sequi aut nihil distinctio perspiciatis et! Distinctio soluta unde in eveniet amet porro quos nulla magnam consequuntur, vero vel culpa?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum suscipit voluptas corrupti dolore magnam nisi vero consequuntur iure accusantium veniam. Vitae unde eaque alias quam non aliquid natus debitis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore porro sequi aut nihil distinctio perspiciatis et! Distinctio soluta unde in eveniet amet porro quos nulla magnam consequuntur, vero vel culpa?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum suscipit voluptas corrupti dolore magnam nisi vero consequuntur iure accusantium veniam. Vitae unde eaque alias quam non aliquid natus debitis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore porro sequi aut nihil distinctio perspiciatis et! Distinctio soluta unde in eveniet amet porro quos nulla magnam consequuntur, vero vel culpa?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum suscipit voluptas corrupti dolore magnam nisi vero consequuntur iure accusantium veniam. Vitae unde eaque alias quam non aliquid natus debitis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore porro sequi aut nihil distinctio perspiciatis et! Distinctio soluta unde in eveniet amet porro quos nulla magnam consequuntur, vero vel culpa?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum suscipit voluptas corrupti dolore magnam nisi vero consequuntur iure accusantium veniam. Vitae unde eaque alias quam non aliquid natus debitis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore porro sequi aut nihil distinctio perspiciatis et! Distinctio soluta unde in eveniet amet porro quos nulla magnam consequuntur, vero vel culpa?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum suscipit voluptas corrupti dolore magnam nisi vero consequuntur iure accusantium veniam. Vitae unde eaque alias quam non aliquid natus debitis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore porro sequi aut nihil distinctio perspiciatis et! Distinctio soluta unde in eveniet amet porro quos nulla magnam consequuntur, vero vel culpa?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum suscipit voluptas corrupti dolore magnam nisi vero consequuntur iure accusantium veniam. Vitae unde eaque alias quam non aliquid natus debitis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore porro sequi aut nihil distinctio perspiciatis et! Distinctio soluta unde in eveniet amet porro quos nulla magnam consequuntur, vero vel culpa?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum suscipit voluptas corrupti dolore magnam nisi vero consequuntur iure accusantium veniam. Vitae unde eaque alias quam non aliquid natus debitis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore porro sequi aut nihil distinctio perspiciatis et! Distinctio soluta unde in eveniet amet porro quos nulla magnam consequuntur, vero vel culpa?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum suscipit voluptas corrupti dolore magnam nisi vero consequuntur iure accusantium veniam. Vitae unde eaque alias quam non aliquid natus debitis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore porro sequi aut nihil distinctio perspiciatis et! Distinctio soluta unde in eveniet amet porro quos nulla magnam consequuntur, vero vel culpa?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum suscipit voluptas corrupti dolore magnam nisi vero consequuntur iure accusantium veniam. Vitae unde eaque alias quam non aliquid natus debitis.Lorem, ipsum dolor sit amet </p>
+        <div class="cit">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id voluptates quia eligendi ducimus hic iure quam perspiciatis qui earum minus, totam beatae. Aliquid vitae sunt eligendi placeat quisquam a quam."</p>
+        </div>
+        <p> Adipisicing elit. Labore porro sequi aut nihil distinctio perspiciatis et! Distinctio soluta unde in eveniet amet porro quos nulla magnam consequuntur, vero vel culpa?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum suscipit voluptas corrupti dolore magnam nisi vero consequuntur iure accusantium veniam. Vitae unde eaque alias quam non aliquid natus debitis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore porro sequi aut nihil distinctio perspiciatis et! Distinctio soluta unde in eveniet amet porro quos nulla magnam consequuntur, vero vel culpa?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum suscipit voluptas corrupti dolore magnam nisi vero consequuntur iure accusantium veniam. Vitae unde eaque alias quam non aliquid natus debitis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore porro sequi aut nihil distinctio perspiciatis et! Distinctio soluta unde in eveniet amet porro quos nulla magnam consequuntur, vero vel culpa?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum suscipit voluptas corrupti dolore magnam nisi vero consequuntur iure accusantium veniam. Vitae unde eaque alias quam non aliquid natus debitis.Lorem, ipsum dolor sit amet ,</p>
+        <div class="cit">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id voluptates quia eligendi ducimus hic iure quam perspiciatis qui earum minus, totam beatae. Aliquid vitae sunt eligendi placeat quisquam a quam."</p>
+        </div>
+        <p>Consectetur adipisicing elit. Labore porro sequi aut nihil distinctio perspiciatis et! Distinctio soluta unde in eveniet amet porro quos nulla magnam consequuntur, vero vel culpa?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum suscipit voluptas corrupti dolore magnam nisi vero consequuntur iure accusantium veniam. Vitae unde eaque alias quam non aliquid natus debitis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore porro sequi aut nihil distinctio perspiciatis et! Distinctio soluta unde in eveniet amet porro quos nulla magnam consequuntur, vero vel culpa?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum suscipit voluptas corrupti dolore magnam nisi vero consequuntur iure accusantium veniam. Vitae unde eaque alias quam non aliquid natus debitis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore porro sequi aut nihil distinctio perspiciatis et! Distinctio soluta unde in eveniet amet porro quos nulla magnam consequuntur, vero vel culpa?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum suscipit voluptas corrupti dolore magnam nisi vero consequuntur iure accusantium veniam. Vitae unde eaque alias quam non aliquid natus debitis.</p>
     </main>
 </body>
 </html>

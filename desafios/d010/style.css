@@ -113,11 +113,13 @@ main > article > p > a:hover{
 main > article > div {
     background-color: #0A210F;
     margin: 10px -20px;
-    padding: 0px 20px;
+    padding: 20px;
 }
 
 main div iframe {
-    max-width: 100%;
+    display: block;
+    margin: auto;
+    width: 70%;
 }
 
 main > article > aside {

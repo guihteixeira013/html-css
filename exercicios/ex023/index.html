@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            background-color: lightgray;
+            box-shadow: 1px 1px 7px 1px #0000002b;
+            border-collapse: ;
+            width: 400px;
+        }
+
+        tr.emphasis {
+            background-color: rgb(168, 168, 168);
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        td.mark {
+            background-color: yellow;
+            font-weight: 600;
+            box-shadow: inset 0px 0px 1px 1px #0000005e;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--    TABLE HIERARCHY (simple)
+
+            TABLE   <table
+                TABLE ROW   <tr>
+                    TABLE HEADER    <th>
+                    TABLE DATA      <td>
+
+    -->
+    <table>
+        <tr>                    <!-- First row -->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>                    <!-- Second row-->
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>  
+        <tr class="emphasis">   <!-- Third row-->
+            <td>A3</td>
+            <td>B3</td>
+            <td class="mark">C3</td>
+        </tr>
+        <tr>                    <!-- Fourth row-->
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+</body>
+</html>

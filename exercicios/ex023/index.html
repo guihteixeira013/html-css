@@ -11,27 +11,21 @@
         }
 
         table {
-            background-color: lightgray;
-            box-shadow: 1px 1px 7px 1px #0000002b;
-            border-collapse: ;
+            border-collapse: collapse;
             width: 400px;
-        }
-
-        tr.emphasis {
-            background-color: rgb(168, 168, 168);
+            height: 400px;
         }
 
         td {
             border: 1px solid black;
             padding: 5px;
+            text-align: center;     /*horizontal align*/
+            vertical-align: middle; /*vertical align*/
         }
-
-        td.mark {
-            background-color: yellow;
-            font-weight: 600;
-            box-shadow: inset 0px 0px 1px 1px #0000005e;
+        
+        .number {
+            text-align: right;
         }
-
     </style>
 </head>
 <body>
@@ -55,15 +49,15 @@
             <td>B2</td>
             <td>C2</td>
         </tr>  
-        <tr class="emphasis">   <!-- Third row-->
-            <td>A3</td>
+        <tr>   <!-- Third row-->
+            <td class="number">A3</td>
             <td>B3</td>
-            <td class="mark">C3</td>
+            <td>C3</td>
         </tr>
         <tr>                    <!-- Fourth row-->
             <td>A4</td>
             <td>B4</td>
-            <td>C4</td>
+            <td class="number">C4</td>
         </tr>
     </table>
 </body>

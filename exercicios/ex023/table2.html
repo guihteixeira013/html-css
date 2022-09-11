@@ -36,10 +36,17 @@
             padding: 7px;
         }
 
+        caption {
+            background-color: lightgray;
+            font-size: 1.5em;
+            font-variant: small-caps;
+            font-weight: bold;
+            padding: 10px;
+        }
+
         thead {
             background-color: gray;
             color: white;
-            font-size: 1.2em;
         }
 
         tbody {
@@ -69,6 +76,7 @@
         ANATOMY FOR LARGE TABLES
         
         TABLE
+            CAPTION (legenda)
             THEAD
                 TR
                     TH, TD
@@ -81,16 +89,16 @@
 
     -->
     <table>
+        <caption>População da Baixada Santista</caption>
         <thead>
             <tr>
-                <th class="cities">Cidade</th>
-                <th class="number">População</th>        
+                <th class="cities" scope="col">Cidade</th>
+                <th class="number" scope="col" style="width: 50px;">População</th>        
             </tr>
         </thead>
         <tbody>
             <tr class="selected">
                 <td class="cities">Bertioga</td>
-                
                 <td class="number">66.154</td>
             </tr>
             <tr class="selected">
@@ -128,7 +136,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total</th>
+                <th scope="row">Total</th>
                 <td class="number"><strong>2.090.007</strong></td>
             </tr>
         </tfoot>

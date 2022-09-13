@@ -12,27 +12,28 @@
 
         table {
             border-collapse: collapse;
-
         }
 
-        tr.inverse {
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .inverse {
             background-color: gray;
             color: white;
-            font-weight: bold;
-            text-align: center;
         }
 
         .left {
             text-align: left;
         }
 
-        td.number {
-            text-align: center;
-        }
-
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
+        .realce {
+            font-weight: bold;
         }
     </style>
 </head>
@@ -54,48 +55,48 @@
             <tr>
                 <th rowspan="4" scope="rowgroup">Exatas</th>
                 <td>Matemática</td>
-                <td class="number">0.0</td>
-                <td class="number">0.0</td>
-                <td class="number">0.0</td>
+                <td class="center">0.0</td>
+                <td class="center">0.0</td>
+                <td class="center">0.0</td>
             </tr>
             <tr>
                 <td>Física</td>
-                <td class="number">0.0</td>
-                <td class="number">0.0</td>
-                <td class="number">0.0</td>
+                <td class="center">0.0</td>
+                <td class="center">0.0</td>
+                <td class="center">0.0</td>
             </tr>
             <tr>
                 <td>Química</td>
-                <td class="number">0.0</td>
-                <td class="number">0.0</td>
-                <td class="number">0.0</td>
+                <td class="center">0.0</td>
+                <td class="center">0.0</td>
+                <td class="center">0.0</td>
             </tr>
             <tr>
                 <td>Biologia</td>
-                <td class="number">0.0</td>
-                <td class="number">0.0</td>
-                <td class="number">0.0</td>
+                <td class="center">0.0</td>
+                <td class="center">0.0</td>
+                <td class="center">0.0</td>
             </tr>
             <tr class="inverse">
                 <th class="left" colspan="4" scope="row">Média de Exatas</th>
-                <td class="number">0.0</td>
+                <td class="center realce">0.0</td>
             </tr>
             <tr>
                 <th rowspan="2">Humanas</th>
                 <td>História</td>
-                <td class="number">0.0</td>
-                <td class="number">0.0</td>
-                <td class="number">0.0</td>
+                <td class="center">0.0</td>
+                <td class="center">0.0</td>
+                <td class="center">0.0</td>
             </tr>
             <tr>
                 <td>Geografia</td>
-                <td class="number">0.0</td>
-                <td class="number">0.0</td>
-                <td class="number">0.0</td>
+                <td class="center">0.0</td>
+                <td class="center">0.0</td>
+                <td class="center">0.0</td>
             </tr>
             <tr class="inverse">
                 <th class="left" colspan="4">Média de Humanas</th>
-                <td class="number">0.0</td>
+                <td class="center realce">0.0</td>
             </tr>
         </tbody>
     </table>

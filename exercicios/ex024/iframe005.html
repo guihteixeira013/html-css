@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test iframe security with JavaScript</title>
+</head>
+<body>
+    <h1>My page</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ipsum voluptas quod! Illum eligendi velit, sequi placeat, adipisci quos dolorum consectetur quae debitis reiciendis quasi praesentium, distinctio inventore dolore ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus totam eaque, odio ipsam libero omnis eum maxime hic dolor quisquam facilis esse delectus ex eos tenetur quasi, facere voluptatum.</p>
+
+    <!-- IF you dont trust the site thats in the iframe so
+        its unsecurity to allow scripts.
+
+        Set sandbox and referrerpolicy parameters to protect self.
+    -->
+
+    <iframe src="extra-pages/pag004.html" frameborder="1" sandbox="allow-scripts" referrerpolicy="no-referrer">
+        Unfortunately your browser dont support this content.
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus incidunt similique corporis velit animi minima consequatur eaque dicta cupiditate quasi autem non numquam sit commodi quam, iure nobis labore laborum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed sunt laudantium dolore officia aliquid voluptatum ab id facilis. Aperiam incidunt reiciendis vero eveniet cumque quisquam sed debitis aut? Itaque, placeat!</p>
+
+</body>
+</html>

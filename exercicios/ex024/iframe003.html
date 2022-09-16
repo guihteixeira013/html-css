@@ -15,6 +15,10 @@
             height: 400px;
             width: 95vw;
         }
+
+        ul {
+            columns: 2;
+        }
     </style>
 </head>
 <body>
@@ -24,13 +28,26 @@
         <li><a href="https://guihteixeira013.github.io/bananalibre/" target="frame">My First repository</a></li>
         <li><a href="https://guihteixeira013.github.io/projeto-site01/" target="frame">My Second repository</a></li>
         <li><a href="https://guihteixeira013.github.io/projeto-cordel/" target="frame">My Third repository</a></li>
+        <li><a href="extra-pages/pag001.html" target="frame">Table page</a></li>
+        <li><a href="extra-pages/pag002.html" target="frame">Local page</a></li>
     </ul>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis maxime quam ipsam! Corrupti itaque sapiente suscipit sunt odio maiores architecto voluptate? Sed minima voluptas cum ipsa labore soluta aliquid amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus fugiat delectus facere corrupti officiis quisquam odit voluptatum molestiae sequi, quos dicta dolores est error cumque sint non vitae deleniti iusto.</p>
 
-    <iframe name="frame" src="images/github-medium.jpeg">
+    <iframe name="frame" srcdoc="<style>
+        body {
+            background-image: url(images/github.jpeg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style><h1> Choose someone option above </h1>">
         <p>[ERROR] Unfortunetaly your browser can not support this content.</p>
     </iframe>
-
+    <!--"<h1> Choose someone option above </h1> <img src='images/github-medium.jpeg'>"-->
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, porro temporibus maiores animi accusamus adipisci officia rem fuga necessitatibus deserunt voluptatum nam cupiditate tempore. Cumque provident repellat quibusdam odio autem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat commodi omnis aliquid corrupti id, ipsam voluptas ducimus provident praesentium quaerat dignissimos hic cum consequatur et beatae recusandae, incidunt quod doloribus.</p>
 </body>
 </html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add contents</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: -10px;
+        }
+
+        main {
+            margin: 10px;
+        }
+
+        section {
+            background-color: rgba(173, 216, 230, 0.301);
+            margin: 10px;
+        }
+
+        section > h2{
+            margin-bottom: 0px;
+            padding: 8px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        section > iframe {
+            border: 0;
+            width: 100%;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            font-family: 'Bungee Spice', sans-serif;
+            padding: 5px 0px 5px 0px;
+            text-align: center;
+            margin: 10px 0px 10px 0px;
+        }
+
+        footer a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: #ffffff08;
+            padding: -5px 5px -5px 5px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Contents in iframes</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum obcaecati culpa omnis quis, sunt cumque mollitia deserunt ratione temporibus quam iusto eaque atque fugiat magnam vitae. Aspernatur officia ducimus vel.</p>
+        <section>
+            <h2>Vimeo videos</h2>
+            <div style="padding:56.25% 0 0 0;position:relative;">
+                <iframe src="https://player.vimeo.com/video/265045525?h=217b87fac0&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen sandbox="allow-scripts" referrerpolicy="no-referrer">
+                    Unfortunately your browser dont support this content
+                </iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+        </section>
+        <section>
+            <h2>Google Maps</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5584.836405361631!2d84.87982258200647!3d45.582137142057505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42a1d6c0919f770f%3A0xc14c1c9db8db86dc!2sCentury%20Park%2C%20Ke%20La%20Ma%20Yi%20Qu%2C%20Ke%20La%20Ma%20Yi%20Shi%2C%20China!5e0!3m2!1sen!2sbr!4v1663357865372!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" sandbox="allow-scripts" referrerpolicy="no-referrer">
+                Unfortunately your browser dont support this content
+            </iframe>
+        </section>
+        <section>
+            <h2>Waze Maps</h2>
+            <iframe src="https://embed.waze.com/iframe?zoom=17&lat=44.430623&lon=26.087417&ct=livemap" width="600" height="450" allowfullscreen sandbox="allow-same-origin allow-scripts" referrerpolicy="no-referrer">
+                Unfortunately your browser dont support this content
+            </iframe>
+        </section>
+        <section>
+            <h2>Google Docs</h2>
+            <iframe src="https://docs.google.com/document/d/e/2PACX-1vQHUjGSMkebcEIZrrD6wl_qqhW7UcxiYgwP0i1oR5R1OnA1vuRFw-Et_FMzj4CTkDQGxOzoW_vIaAQQ/pub?embedded=true" width="600" height="450" allowfullscreen sandbox="sandbox" referrerpolicy="no-referrer">
+                Unfortunately your browser dont support this content
+            </iframe>
+        </section>
+    </main>
+    <footer>
+        <p>Created by <a href="https://github.com/guihteixeira013" target="_blank">Guilherme Teixeira</a></p>
+    </footer>
+</body>
+</html>

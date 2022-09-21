@@ -23,7 +23,7 @@ main {
     height: 100vh;
 }
 
-section#phone {
+#phone {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -33,7 +33,7 @@ section#phone {
     background: url('../images/frame-iphone.png') no-repeat ;
 }
 
-iframe#screen {
+#screen {
     position: relative;
     top: 80px;
     left: 22px;

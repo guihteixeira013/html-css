@@ -39,7 +39,27 @@
 <body>
     <main>
         <h1>My first form</h1>
-        <form action="register.php" autocomplete="off">
+
+        <!-- METHODS OF FORM SENDS
+                GET and POST
+
+                GET > (default) Data wil appear on URL.
+                POST > Don't will appear on URL but in developement tools.
+
+                Its BOTH not secure.
+
+                How choose one of them ?
+
+                GET > Can use it when data its not sensible;
+                      Easy way to share link with other people because the li nk will appear many details;
+                      Limit of 3000bytes (like 3000 letters);
+                POST > Send archives;
+                       Send images;                       
+
+                BUT the best way its HTTPS method that i will learn yet.
+                      
+        -->
+        <form action="register.php" method="POST" autocomplete="off">
             <p><label for="iname">Name:</label><br>
                 <input type="text" name="name" id="iname"></p>
             <p><label for="ilast-name">Last Name:</label><br>

@@ -6,17 +6,8 @@
     padding: 0px;
 }
 
-body {
-    scrollbar-width: 0px;
-}
-
-::-webkit-scrollbar {
-    width: 0px;
-    height: 0px;
-}
-
 img {
-    width: 100vw;
+    width: 98.4vw;
 }
 
 a {

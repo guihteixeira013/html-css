@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemple of Form</h1>
+    <form action="register.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Personal data</legend>
+            <p>
+                <label for="iname">Name: </label>
+                <input type="text" name="name" id="iname" required autocomplete="name" minlength="5" maxlength="20" placeholder="First Name">
+            </p>
+            <p>
+                <label for="iemail">Email: </label>
+                <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="Email">
+            </p>
+            <p>
+                <label for="iphone">Phone Number: </label>
+                <input type="tel" name="phone" id="iphone" required autocomplete="tel" placeholder="(xx)xxxx-xxxx" pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
+                <!-- pattern => RegEx (To study about)
+                    Reg - Regular
+                    Ex - Expression
+                    HTML5 telefone pattern > to write on search
+                    *BUT this method isn't best way to secure information,
+                    is most better use JS*
+                -->
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>

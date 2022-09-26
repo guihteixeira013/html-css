@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="register.php" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sex" id="isexfem" value="F"><label for="isexfem">Feminino</label><br>
+            <input type="radio" name="sex" id="isexmas" value="M"><label for="isexmas">Masculino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Favorite Sports</legend>
+            <input type="checkbox" name="spsoc" id="ispsoc">
+            <label for="ispsoc"> Soccer</label> <br>
+            <input type="checkbox" name="spfig" id="ispfig">
+            <label for="ispfig"> Fight</label> <br>
+            <input type="checkbox" name="spgym" id="ispgym">
+            <label for="ispgym">Gym</label> <br>
+            <input type="checkbox" name="sprun" id="isprun">
+            <label for="isprun">Run</label> <br>
+            <input type="checkbox" name="spswi" id="ispswi">
+            <label for="ispswi">Swimming</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>

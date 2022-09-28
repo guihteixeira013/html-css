@@ -1,3 +1,18 @@
 @charset "UTF-8";
 
-/* PORTRAIT Setting */
+/* PORTRAIT Setting 
+
+proportion: value  x >= value
+               W      H
+              499  x 599
+ex:           1000 x 1000
+              400  x 401
+              350  x 700
+
+        To consider PORTRAIT, the Height need to be >= width.
+*/
+
+body {
+    background: url(../images/cev-portrait.jpg) center bottom no-repeat fixed;
+    background-size: contain;
+}

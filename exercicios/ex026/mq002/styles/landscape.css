@@ -1,3 +1,18 @@
 @charset "UTF-8";
 
-/* LANDSCAPE Setting */
+/* LANDSCAPE Setting 
+
+proportion: value  x > value
+               W      H
+              600  x 599
+ex:           1001 x 1000
+              899  x 401
+              900  x 700
+
+        To consider LANDSCAPE, the Width need to be > height.
+*/
+
+body {
+    background: url(../images/cev-landscape.jpg) left bottom no-repeat fixed;
+    background-size: contain;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form test</title>
+</head>
+<body>
+    <form action="register.php" method="post">
+
+        <p>
+            <input type="range" name="rat" id="irat" min="0" max="10" oninput="ival.innerHTML = Number(irat.value)">
+            <output name="val" id="ival">5</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>

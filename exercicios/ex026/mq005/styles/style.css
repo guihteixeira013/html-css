@@ -6,6 +6,65 @@
     padding: 0px;
 }
 
-menu a {
+:root {
+    --cor-0 : #dadbd5;
+    --cor-1 : #59FFA0;
+    --cor-2 : #FFED65;
+    --cor-3 : #B4ADEA;
+    --cor-4 : #50514F;
+}
+
+html, body {
+    background-color: var(--cor-0);
+}
+
+header {
+    background-color: var(--cor-2);
+}
+
+header > h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+manu {
+    display: block;
+}
+
+menu > ul {
     list-style-type: neno;
+}
+
+menu > ul > li > a {
+    background-color: var(--cor-1);
+    color: black;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid var(--cor-2);
+} 
+
+menu > ul > li > a:hover {
+    background-color: var(--cor-3);
+    color: white;
+}
+
+main {
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    width: 90vw;
+}
+
+main > article > h2 {
+    padding-bottom: 20px;
+}
+
+main > article > p {
+    margin-bottom: 10px;
+    text-align: justify;
+    text-indent: 10px;
 }

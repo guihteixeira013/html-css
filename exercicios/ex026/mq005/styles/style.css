@@ -23,12 +23,26 @@ header {
 }
 
 header > h1 {
+    padding: 20px;
+    text-align: center;
+}
+  
+span#burguer {
+    background-color: var(--cor-4);
+    color: white;
+    cursor: pointer;
+    display: block;
     padding: 10px;
     text-align: center;
 }
 
-manu {
-    display: block;
+span#burguer:hover {
+    background-color: var(--cor-3);
+    color: black;
+}
+
+menu {
+    display: none;
 }
 
 menu > ul {

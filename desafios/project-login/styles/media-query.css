@@ -4,9 +4,9 @@
 
 Small Screens: to 600px     DONE!
 Mobile: 600px to 768px      DONE!
-Tablet: 768px to 992px  
-Desktop: 992px to 1200px
-Large Screens: above 1200px 
+Tablet: 768px to 992px      DONE!
+Desktop: 992px to 1200px    DONE!
+Large Screens: above 1200px DONE!
 
 */
 
@@ -36,7 +36,7 @@ Large Screens: above 1200px
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
-    
+
     section#login {
         width: 950px;
     }

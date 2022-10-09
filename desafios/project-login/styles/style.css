@@ -60,3 +60,56 @@ div#form > h1 {
 div#form > p {
     font-size: 0.8em;
 }
+
+form > div.field {
+    display: block;
+    background-color: #5f2c82;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    margin: 5px 0px;
+}
+
+div.field label {
+    display: none;
+}
+
+form > input[type=submit] {
+    display: block;
+    background: #49a09d;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+}
+
+form > input[type=submit]:hover {
+    background-color: #2e6664;
+}
+
+form > a.buttom {
+    display: block;
+    background-color: white;
+    border: 1px solid #49a09d;
+    border-radius: 5px;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    color: #2e6664;
+    padding-top: 7px;
+    height: 40px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+form > a.buttom > span {
+    font-size: 0.8em;
+}
+
+form > a.buttom:hover {
+    background-color: #65e9e4;
+}
+
